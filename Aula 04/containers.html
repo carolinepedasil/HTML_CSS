@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <div id="container">
+        <section id="cabecalho">
+            <!-- tag para agrupar elementos semelhantes -->
+            <p>Exemplo fonte em EM - trabalho com o tamanho da fonte configurada pelo navegador</p>
+            <p id="vw">Exemplo fonte em vw </p>
+        </section>
+
+        <section id="corpo">
+            <div id="banner">
+            </div>
+            <div id="novidades">
+                <form action="../aula1.html" method="get">
+                    <label for="nome">Nome</label>
+                    <input type="text" autocomplete="on" value="Ola" required minlength="6" pattern="[A-ZaZ]{3}"
+                        id="nome" name="nome" title="Mouse em cima" placeholder="Digite o seu nome">
+
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" size="4" maxlength="4">
+
+                    <!-- desabilitado consigo selecionar o elemento -->
+                    <label for="data">Data</label>
+                    <input type="date" name="data" id="data" readonly>
+                    <!-- desabilitado não consigo selecionar o elemento -->
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" disabled>
+
+                    <label for="numero">Numero</label>
+                    <input type="numero" name="numero" id="numero" min="10" max="1000" step="3" autofocus>
+
+                    <!-- um ou outro -->
+                    <label for="escolaridade">escolaridade</label>
+                    <label for="escolaridade">Superior</label>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="superior">
+                    <label for="escolaridade">Tecnico</label>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="tecnico">
+
+                    <!-- varios -->
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="html" id="html" value="html">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="css" id="css" value="css">
+
+                    <label for="estados">Estados</label>
+                    <select name="Estados" id="estados" multiple>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">RJ</option>
+                        <option value="PR">PR</option>
+                    </select>
+                    <br>
+
+                    <label for="comentario">Comentário</label>
+                    <textarea name="comentario" id="comentario" rows="10" cols="30"></textarea>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+
+                </form>
+            </div>
+            <div id="lateraldireita">
+            </div>
+
+        </section>
+        <section id="rodapé">
+            <div id="mapa">
+            </div>
+
+            <div id="rodape">
+            </div>
+        </section>
+
+        <aside>
+            <!-- tag para anuncio, conteúdo que não é relacionado a página -->
+        </aside>
+
+        <nav>
+            <!-- tag para navegação do site, pode ser link, menu etc -->
+        </nav>
+    </div>
+
+</body>
+
+</html>

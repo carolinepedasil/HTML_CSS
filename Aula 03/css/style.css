@@ -1,0 +1,37 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Nanum+Gothic&display=swap'); */
+
+/*
+@font-face {
+    src: url("fonts/NanumGothic-Bold.ttf");
+    font-family: "NanumGothic-Bold";
+    font-weight: normal;
+}
+*/
+
+.fundoParagrafo {
+    font-family: "NanumGothic-Bold";
+    background-color: greenyellow;
+    /* background-image: linear-gradient(angulo, direção, corinicio, corfim, posição); */
+    background-image: linear-gradient(to bottom, green, black);
+}
+
+h2 {
+    background-color: crimson;
+    color: white;
+    font-weight: normal;
+    font-size: 100px;
+    font-family: Cabin, Helvetica, sans-serif;
+}
+
+#unico {
+    background-color: deeppink;
+    background-image: url("https://static.todamateria.com.br/upload/58/45/5845613f4b7d9-o-que-e-paisagem.jpg");
+    background-position: 0cm;
+    background-repeat: no-repeat;
+    /* background: deeppink url("https://static.todamateria.com.br/upload/58/45/5845613f4b7d9-o-que-e-paisagem.jpg") 0 no-repeat; */
+}
+
+p span {
+    background-image: url("https://static.todamateria.com.br/upload/58/45/5845613f4b7d9-o-que-e-paisagem.jpg");
+    
+}
